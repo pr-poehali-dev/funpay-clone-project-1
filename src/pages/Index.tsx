@@ -14,7 +14,7 @@ const Index = () => {
   const popularGames = [
     { id: 1, name: 'PUBG MOBILE', icon: 'https://cdn.poehali.dev/files/ea11e63f-ba4d-4078-93d3-091d1bb355fe.jpg', offers: 1520 },
     { id: 4, name: 'Valorant', icon: '🔫', offers: 756 },
-    { id: 5, name: 'Standoff 2', icon: '💥', offers: 634 },
+    { id: 5, name: 'Standoff 2', icon: 'https://cdn.poehali.dev/files/2afb4250-4179-4445-9cce-96e4ff1b92a8.jpg', offers: 634 },
   ];
 
   const topSellers = [
