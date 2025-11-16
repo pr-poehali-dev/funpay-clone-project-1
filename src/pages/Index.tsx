@@ -16,7 +16,7 @@ const Index = () => {
     { id: 2, name: 'Dota 2', icon: '⚔️', offers: 892 },
     { id: 3, name: 'Genshin Impact', icon: '✨', offers: 2341 },
     { id: 4, name: 'Valorant', icon: '🔫', offers: 756 },
-    { id: 5, name: 'League of Legends', icon: '🏆', offers: 1543 },
+    { id: 5, name: 'Standoff 2', icon: '💥', offers: 634 },
     { id: 6, name: 'Fortnite', icon: '🎯', offers: 1098 },
   ];
 
