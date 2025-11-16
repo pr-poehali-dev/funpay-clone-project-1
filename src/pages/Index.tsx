@@ -12,9 +12,6 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState('catalog');
 
   const popularGames = [
-    { id: 1, name: 'CS:GO', icon: '🎮', offers: 1234 },
-    { id: 2, name: 'Dota 2', icon: '⚔️', offers: 892 },
-    { id: 3, name: 'Genshin Impact', icon: '✨', offers: 2341 },
     { id: 4, name: 'Valorant', icon: '🔫', offers: 756 },
     { id: 5, name: 'Standoff 2', icon: '💥', offers: 634 },
   ];
