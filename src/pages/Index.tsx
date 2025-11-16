@@ -12,6 +12,7 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState('catalog');
 
   const popularGames = [
+    { id: 1, name: 'PUBG MOBILE', icon: 'https://cdn.poehali.dev/files/ea11e63f-ba4d-4078-93d3-091d1bb355fe.jpg', offers: 1520 },
     { id: 4, name: 'Valorant', icon: '🔫', offers: 756 },
     { id: 5, name: 'Standoff 2', icon: '💥', offers: 634 },
   ];
@@ -139,7 +140,11 @@ const Index = () => {
                 className="hover:shadow-lg transition-all hover:scale-105 cursor-pointer border-2 hover:border-primary"
               >
                 <CardContent className="p-6 text-center">
-                  <div className="text-5xl mb-3">{game.icon}</div>
+                  {game.icon.startsWith('http') ? (
+                    <img src={game.icon} alt={game.name} className="w-16 h-16 mx-auto mb-3 rounded-lg object-cover" />
+                  ) : (
+                    <div className="text-5xl mb-3">{game.icon}</div>
+                  )}
                   <h4 className="font-semibold mb-1">{game.name}</h4>
                   <p className="text-sm text-muted-foreground">{game.offers} предложений</p>
                 </CardContent>
