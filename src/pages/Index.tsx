@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState('catalog');
@@ -93,10 +94,12 @@ const Index = () => {
             </nav>
           </div>
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm">
-              <Icon name="LogIn" size={16} className="mr-2" />
-              Войти
-            </Button>
+            <Link to="/dashboard">
+              <Button variant="outline" size="sm">
+                <Icon name="User" size={16} className="mr-2" />
+                Личный кабинет
+              </Button>
+            </Link>
             <Button size="sm" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
               <Icon name="UserPlus" size={16} className="mr-2" />
               Регистрация
